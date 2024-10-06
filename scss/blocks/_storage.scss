@@ -1,0 +1,126 @@
+// background: url(../img/solution/bg.jpg) center center / cover no-repeat;
+.storage {
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 580px;
+    grid-auto-rows: 580px;
+  }
+  &__title-wrapper {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    &::before {
+      content:'';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color:#00c0f050;
+      width: 170px;
+      height: 170px;
+    }
+  }
+  &__item.item1 {
+    &::before {
+      right: 40px;
+    }
+    justify-content: flex-end;
+    background: url(../img/storage/bg1.jpg) center center / cover no-repeat;
+    .storage__title {
+      text-align: end;
+    }
+    .storage__text {
+      text-align: end;
+    }
+  }
+  &__item.item2 {
+    &::before {
+      left: 40px;
+    }
+    justify-content: flex-start;
+    background: url(../img/storage/bg2.jpg) center center / cover no-repeat;
+    .storage__title {
+      text-align: start;
+    }
+    .storage__text {
+      text-align: start;
+    }
+  }
+  &__description {
+    z-index: 2;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    color:#fff;
+  }
+  &__text {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 100;
+    max-width: 490px;
+    color:#fff;
+    line-height: 1.5;
+  }
+}
+@media (max-width:1190px) {
+  .storage {
+    &__inner {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-auto-rows: auto;
+    }
+    &__item {
+      height: 300px;
+    }
+    &__title {
+      font-size: 23px;
+    }
+    &__text {
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .storage {
+    &__text {
+      font-weight: 400;
+    }
+    &__item {
+      height: 250px;
+      padding: 5px;
+    }
+    &__item.item1 {
+      &::before {
+        right: 2px;
+      }
+      justify-content: start;
+      .storage__title {
+        text-align: start;
+      }
+      .storage__text {
+        text-align: start;
+      }
+    }
+    &__item.item2 {
+      &::before {
+        left: 2px;
+      }
+      justify-content: start;
+      .storage__title {
+        text-align: start;
+      }
+      .storage__text {
+        text-align: start;
+      }
+    }
+  }
+}

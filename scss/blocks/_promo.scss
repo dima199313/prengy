@@ -1,0 +1,142 @@
+.promo {
+
+  &__inner {
+    padding-top: 89px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+  }
+  &__slider {
+    // height: 700px;
+
+  }
+  &__logo-link {
+    display: inline-block;
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__phone-wrapper {
+    position: absolute;
+    bottom:0;
+    right: 15%;
+    z-index: 2;
+  }
+  &__img-phone {
+    height: 450px;
+    // width: 284px;
+    object-fit: cover;
+  }
+  &__slider-bg {
+    height: 700px;
+
+    object-fit: cover;
+  }
+  &__content {
+    max-width: 580px;
+    .h1-title {
+      margin-top: 90px;
+    }
+  }
+  &__subtitle {
+    max-width: 430px;
+    margin: 30px 0 30px;
+    font-size: 24px;
+    color:#fff;
+    span {
+      text-transform: uppercase;
+    }
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    &__logo {
+      width: 140px;
+      height: 65px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .nav {
+      &__list {
+        list-style-type: none;
+        display: flex;
+        gap: 45px;
+      }
+      &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color:#F7F9F9;
+        font-weight: 700;
+        font-size: 13px;
+        transition: color .2s;
+        &:hover {
+          color:#00C2F0;
+        }
+      }
+    }
+  }
+}
+@media (max-width:1280px){
+  .promo {
+    &__img-phone {
+      height: 350px;
+    }
+    &__slider-bg {
+      height: 580px;
+    }
+  }
+}
+@media (max-width:1200px) {
+  .promo {
+    &__inner {
+      padding-top: 0;
+    }
+  }
+}
+@media (max-width: 1030px) {
+  .promo {
+    &__img-phone {
+      height: 290px;
+    }
+    &__subtitle {
+      margin: 25px 0;
+      font-size: 20px;
+    }
+    &__content {
+      .h1-title {
+        margin-top: 80px;
+        font-size: 30px;
+      }
+    }
+  }
+  .button {
+    font-size: 14px;
+    padding: 19px 25px;
+  }
+}
+@media(max-width:800px) {
+  .promo {
+    &__phone-wrapper {
+      right: 2%;
+    }
+    &__slider-bg {
+      height: 510px;
+    }
+  }
+}
+@media (max-width:630px) {
+  .promo {
+    &__content {
+      .h1-title {
+        margin-top: 70px;
+        font-size: 30px;
+      }
+    }
+    &__img-phone {
+      display: none;
+    }
+  }
+}

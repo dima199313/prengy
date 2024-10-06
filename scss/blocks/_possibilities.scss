@@ -1,0 +1,98 @@
+.possibilities {
+  &__inner {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 30px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    grid-template-rows: repeat(auto-fit, 355px);
+    grid-auto-rows: 355px;
+
+
+  }
+  &__item {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: auto 0;
+    width: 100%;
+    height: 100%;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: #00000092;
+      z-index: 2;
+      width: 100%;
+      height: 155px;
+    }
+    
+  }
+  &__item.item1{
+    background: url(../img/possibilities/1.jpg) center center / cover no-repeat;
+  }
+  &__item.item2{
+    background: url(../img/possibilities/2.jpg) center center / cover no-repeat;
+  }
+  &__item.item3{
+    background: url(../img/possibilities/3.jpg) center center / cover no-repeat;
+  }
+  &__item.item4{
+    background: url(../img/possibilities/4.jpg) center center / cover no-repeat;
+  }
+  &__item.item5{
+    background: url(../img/possibilities/5.jpg) center center / cover no-repeat;
+  }
+  &__item.item6{
+    background: url(../img/possibilities/6.jpg) center center / cover no-repeat;
+  }
+  &__text {
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+@media (max-width: 1180px) {
+  .possibilities {
+    .container {
+      padding: 0;
+    }
+    &__items {
+      grid-template-columns: repeat(2, 380px);
+      grid-template-rows: repeat(auto-fit, 215px);
+      grid-auto-rows: 215px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .possibilities {
+
+    &__inner {
+      padding: 30px 0 0;
+    }
+    &__content {
+      width: 100%;
+    }
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(auto-fit, 215px);
+      grid-auto-rows: 215px;
+    }
+    
+  }
+}
