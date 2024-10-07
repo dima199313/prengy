@@ -25,8 +25,8 @@ $(document).ready(function () {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 5000,
-    prevArrow: "<img src='../img/icon/arrowLeft2.png' class='prev' alt='1'>",
-    nextArrow: "<img src='../img/icon/arrowRigth2.png' class='next' alt='2'>",
+    prevArrow: "<img src='img/icon/arrowLeft2.png' class='prev' alt='1'>",
+    nextArrow: "<img src='img/icon/arrowRigth2.png' class='next' alt='2'>",
   });
 });
 
