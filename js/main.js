@@ -13,8 +13,8 @@ $(document).ready(function () {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 5000,
-    prevArrow: "<img src='../img/icon/arrowLeft.png' class='prev' alt='1'>",
-    nextArrow: "<img src='../img/icon/arrowRigth.png' class='next' alt='2'>",
+    prevArrow: "<img src='img/icon/arrowLeft.png' class='prev' alt='1'>",
+    nextArrow: "<img src='img/icon/arrowRigth.png' class='next' alt='2'>",
   });
 });
 $(document).ready(function () {
